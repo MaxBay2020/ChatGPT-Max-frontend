@@ -1,8 +1,9 @@
 #root {
-  max-width: 1280px;
+  /*max-width: 1280px;*/
   margin: 0 auto;
-  padding: 2rem;
+  /*padding: 2rem;*/
   text-align: center;
+  width: 100%;
 }
 
 .logo {
@@ -16,6 +17,129 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+.gpt-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+  font-size: 33px;
+  font-weight: 600;
+  padding: 200px 0;
+}
+
+.side-bar{
+  width: 244px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #F9F9F9;
+}
+.side-bar button{
+  margin: 15px;
+  border: 1px solid rgba(187, 187, 187, 0.42);
+}
+
+.side-bar button:focus{
+  outline: none;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+.bottom-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info{
+  color: #343232A8;
+  font-size: 11px;
+  padding: 10px;
+}
+
+input{
+  border: 1px solid rgba(153, 153, 153, 0.66);
+  /*background-color: rgba(226, 226, 226, 0.66);*/
+  width: 100%;
+  font-size: 20px;
+  padding: 12px 15px;
+  border-radius: 5px;
+  box-shadow: #343232A8;
+}
+
+input:focus{
+  outline: none;
+}
+
+.input-container{
+  width: 100%;
+  max-width: 650px;
+  position: relative;
+}
+
+.input-container #submit{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+nav{
+  border-top: 1px solid rgba(201, 201, 201, 0.7);
+  padding: 10px;
+  margin: 10px;
+}
+.history{
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.history p {
+  cursor: pointer;
+}
+
+.feed{
+  /*overflow: scroll;*/
+  width: 100%;
+  padding: 0;
+}
+
+.feed li{
+  background-color: rgba(229, 229, 229, 0.66);
+  display: flex;
+  width: 100%;
+  /*max-width: 700px;*/
+  padding: 20px;
+  margin: 20px 0;
+  text-align: right;
+}
+
+.feed p{
+  color: rgba(73, 73, 73, 0.8);
+  font-size: 14px;
+  text-align: left;
+}
+
+.feed p.role{
+  min-width: 100px;
 }
 
 @keyframes logo-spin {
